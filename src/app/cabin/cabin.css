@@ -1,0 +1,127 @@
+:root {
+    --color1: #013220;
+    --color2: #000000;
+    --color3: #E3DCD2;
+    --color4: #996515;
+    --font-size1: 5rem;
+    --font-size2: 3rem;
+    --font-size3: 6rem;
+    --font-size4: 4rem;
+}
+.cabin {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    margin-top: 8%;
+    -ms-overflow-style: none;
+ scrollbar-width: none;
+ -webkit-scrollbar:none;
+ margin-left: 0;
+ margin-right: 0;
+ padding: 0;
+}
+.cabin-line {
+    width: 3vw;
+    height: 7vh;
+    background-color: var(--color4);
+}
+.cabin-text {
+    width: 50vw;
+}
+.cabin-text h5 {
+    color: var(--color1);
+    font-size: var(--font-size4);
+}
+.cabin-text h1 {
+    color: var(--color2);
+    font-size: var(--font-size3);
+}
+.cabin-text p {
+    color: var(--color2);
+    font-size: var(--font-size4);
+}
+.cabin img {
+    width: 37vw;
+    height: 90vh;
+}
+.cabin-text button {
+    background-color: transparent;
+    padding: 1rem;
+    height: 8vh;
+    width: 15vw;
+    font-size: var(--font-size4);
+    color: var(--color1);
+    border-radius: 50px;
+    border-color: var(--color1);
+    transition: ease;
+    transition-duration: 2s;
+
+}
+.cabin-text button:hover {
+    background-color: var(--color2);
+    color: var(--color4);
+}
+@media (orientation:portrait) {
+    .cabin {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        margin-top: 5%;
+        margin-left: -10%;
+        
+    }
+    .cabin-text {
+        width: 100vw;
+    }
+    .cabin-text h1, .cabin-text h5  {
+        font-size: x-large;
+    }
+    .cabin-text h1, .cabin-text h5, .cabin-text button, .cabin-text p{
+        padding: 0 2rem;
+    }
+    .cabin-text button {
+        font-size: small;
+        margin-left: 1.5rem;
+    }
+    .cabin-line {
+        width: 1vw;
+        height: 5vh;
+        padding: 0 1rem;
+        margin-left: 1%;
+    }
+    .cabin-text h1 {
+        margin-top: -3%;
+    }
+    .cabin-text p {
+        font-size: large;
+    }
+    .cabin-text button {
+        font-size: small;
+        width: 40vw;
+    }
+    .cabin img {
+        width: 100vw;
+        height: 80vh;
+        margin-top: 3%;
+        
+    }
+}
+@media (700px <= width <= 950px) {
+    .cabin-text button {
+        width: 30vw;
+        height: 6vh;
+        font-size: large;
+    }
+}
+@media (1020px <= width <= 2000px) {
+    .cabin-text h1, .cabin-text h5, .cabin-text button, .cabin-text p {
+        font-size: x-large;
+    }
+    .cabin-text button {
+        font-size: larger;
+        width: 20vw;
+        height: 9vh;
+    }
+}

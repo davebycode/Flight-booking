@@ -1,0 +1,128 @@
+:root {
+    --color1: #013220;
+    --color2: #000000;
+    --color3: #E3DCD2;
+    --color4: #996515;
+    --font-size1: 5rem;
+    --font-size2: 3rem;
+    --font-size3: 6rem;
+    --font-size4: 4rem;
+}
+.lounge {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+    margin-top: 8%;
+    -ms-overflow-style: none;
+ scrollbar-width: none;
+ -webkit-scrollbar:none;
+ margin-left: 0;
+ margin-right: 0;
+}
+.lounge-line {
+    width: 3vw;
+    height: 7vh;
+    background-color: var(--color4);
+}
+.lounge-text {
+    width: 50vw;
+}
+.lounge-text h5 {
+    color: var(--color1);
+    font-size: var(--font-size4);
+}
+.lounge-text h1 {
+    color: var(--color2);
+    font-size: var(--font-size3);
+}
+.lounge-text p {
+    color: var(--color2);
+    font-size: var(--font-size4);
+}
+.lounge img {
+    width: 37vw;
+    height: 90vh;
+}
+.lounge-text button {
+    background-color: transparent;
+    padding: 1rem;
+    height: 8vh;
+    width: 15vw;
+    font-size: var(--font-size4);
+    color: var(--color1);
+    border-radius: 50px;
+    border-color: var(--color1);
+    transition: ease;
+    transition-duration: 2s;
+
+}
+.lounge-text button:hover {
+    background-color: var(--color2);
+    color: var(--color4);
+}
+@media (orientation:portrait) {
+    .lounge {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        margin-top: 5%;
+        /* margin-left: -10%; */
+        
+    }
+    .lounge-text {
+        width: 100vw;
+        margin-top: 3%;
+    }
+    .lounge-text h1, .lounge-text h5  {
+        font-size: x-large;
+    }
+    .lounge-text h1, .lounge-text h5, .lounge-text button, .lounge-text p{
+        padding: 0 2rem;
+    }
+    .lounge-text button {
+        font-size: small;
+        margin-left: 1.5rem;
+    }
+    .lounge-line {
+        width: 1vw;
+        height: 5vh;
+        padding: 0 1rem;
+        margin-left: 1%;
+    }
+    .lounge-text h1 {
+        margin-top: -3%;
+    }
+    .lounge-text p {
+        font-size: large;
+    }
+    .lounge-text button {
+        font-size: small;
+        width: 40vw;
+    }
+    .lounge img {
+        width: 100vw;
+        height: 80vh;
+        margin-top: 3%;
+        margin-left: 3%;
+        
+    }
+}
+@media (700px <= width <= 950px) {
+    .lounge-text button {
+        width: 30vw;
+        height: 6vh;
+        font-size: large;
+    }
+}
+@media (1020px <= width <= 2000px) {
+    .lounge-text h1, .lounge-text h5, .lounge-text button, .lounge-text p {
+        font-size: x-large;
+    }
+    .lounge-text button {
+        font-size: larger;
+        width: 20vw;
+        height: 9vh;
+    }
+}

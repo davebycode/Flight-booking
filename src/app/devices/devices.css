@@ -1,0 +1,85 @@
+:root {
+    --color1: #013220;
+    --color2: #000000;
+    --color3: #E3DCD2;
+    --color4: #996515;
+    --font-size1: 5rem;
+    --font-size2: 3rem;
+    --font-size3: 6rem;
+    --font-size4: 4rem;
+    --font-family: 'Poltawski Nowy', serif;
+}
+.devices {
+    margin-top: 10rem;
+    -ms-overflow-style: none;
+ scrollbar-width: none;
+ -webkit-scrollbar:none;
+ margin-left: 0;
+ margin-right: 0;
+}
+.devices-names {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 7%;
+    color: var(--color3);
+    font-size: var(--font-size4);
+}
+.devices-names h4 {
+    font-size: var(--font-size3);
+    font-family:var(--font-family);
+    color: var(--color3);
+}
+.devices-stuff {
+    background-color: var(--color1);
+    width: 100vw;
+    height: 50vh;
+}
+
+@media (orientation:portrait) {
+    .devices{
+        overflow: hidden;
+        margin-left: -10%;
+        margin-right: 0;
+        margin-top: 2.2%;
+    }
+    .devices-names {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: none;
+        font-size: 1rem;
+    }
+    .devices-names h4 {
+        font-size: 1rem;
+    }
+    .devices-stuff {
+        width: 100vw;
+        height: 40vh;
+        margin-left: -10%;
+        padding-bottom: 7rem;
+        
+
+    }
+    
+}
+
+@media (1020px <= width <= 2000px) {
+    .devices {
+        overflow: hidden;
+    }
+    .devices-names, .devices-names h4 {
+        font-size: x-large;
+    }
+    .devices-stuff {
+        margin-left: -5.5%;
+        width: 100vw;
+        height: 40vh;
+    }
+    .fa-mobile-screen-button, .fa-credit-card, .fa-wifi, .fa-bowl-rice{
+        color: var(--color1);
+        font-size: var(--font-size2);
+    }
+    
+}
