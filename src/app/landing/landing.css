@@ -18,16 +18,15 @@
     color: var(--color2);
 }
 .background {
-    /* min-width: 100vw; */
-    min-height: 100vh;
-    margin-top: 7rem;
+    width: 100vw;
+    min-height: 30vh;
+    margin-top: 3rem;
     scroll-snap-type: none;
 
 }
 @media (orientation:portrait) {
     .background {
-        min-height: 70vh;
-        width: 100vw;
+        min-height: 100vh;
         margin-top: -5rem;
     }
     .landing h1 {
