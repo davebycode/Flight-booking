@@ -1,0 +1,43 @@
+:root {
+    --color1: #013220;
+    --color2: #000000;
+    --color3: #E3DCD2;
+    --color4: #996515;
+    --font-size1: 4rem;
+    --font-size2: 2rem;
+    --font-size3: 5rem;
+    --font-size4: 3rem;
+    --font-family: 'Poltawski Nowy', serif;
+}
+.landing h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: var(--font-family);
+    font-weight: bolder;
+    font-size: var(--font-size3);
+    color: var(--color2);
+}
+.background {
+    /* min-width: 100vw; */
+    min-height: 100vh;
+    margin-top: 7rem;
+    scroll-snap-type: none;
+
+}
+@media (orientation:portrait) {
+    .background {
+        min-height: 70vh;
+        width: 100vw;
+        margin-top: -5rem;
+    }
+    .landing h1 {
+        font-size: larger;
+        margin-top: 3rem;
+    }
+    
+}
+@media (600px <= width <= 1200px) {
+    .landing h1 {
+        font-size: var(--font-size2);
+    }
+}

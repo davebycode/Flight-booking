@@ -5,8 +5,8 @@ import Know from "./know/know"
 import Airport from "./airport/airport"
 import Devices from "./devices/devices"
 import Lounge from "./lounge/lounge"
-
-
+import Landing from "./landing/landing"
+import Booking from "./booking/booking"
 
 export default function Home() {
   return (
@@ -17,6 +17,8 @@ export default function Home() {
       <Know/>
       <Devices/>
       <Lounge/>
+      <Landing/>
+      <Booking/>
         <Address/>
     </main>
   )

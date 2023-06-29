@@ -3,10 +3,10 @@
     --color2: #000000;
     --color3: #E3DCD2;
     --color4: #996515;
-    --font-size1: 5rem;
-    --font-size2: 3rem;
-    --font-size3: 6rem;
-    --font-size4: 4rem;
+    --font-size1: 4rem;
+    --font-size2: 2rem;
+    --font-size3: 5rem;
+    --font-size4: 3rem;
 }
 .cabin {
     display: flex;
